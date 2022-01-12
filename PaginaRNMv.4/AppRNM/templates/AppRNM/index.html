@@ -1,0 +1,472 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RN Motion</title>
+
+	<link rel="stylesheet" href="{% static 'AppRNM/css/bootstrap.min.css' %}" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="{% static 'AppRNM/css/pogo-slider.min.css' %}" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'AppRNM/css/style.css' %}" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'AppRNM/css/responsive.css' %}" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'AppRNM/css/custom.css' %}" />
+</head>
+
+<div id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+   <div id="preloader">
+        <div class="loader">
+            <img src="{% static 'AppRNM/images/m1.gif' %}" alt="#" />
+        </div>
+    </div> 
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="{% url 'Inicio' %}"><img src="{% static 'AppRNM/images/Log.png' %}" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="{% url 'Inicio' %}">Home</a></li>
+                        <li><a class="nav-link" href="{% url 'Acerca' %}">About Us</a></li>
+                        <li><a class="nav-link" href="{% url 'Trabajo' %}">Services</a></li>
+                
+						<li><a class="nav-link" href="{% url 'Contacto' %}">Contact us</a></li>
+                       
+                    </ul>
+                </div>
+             
+            </div>
+        </nav>
+    </header>
+
+  
+	<div class="redesSociales">
+        <ul>
+        <li class="co"><a href="mailto:@gmail.com" target="_blank" ><img src="{% static 'AppRNM/images/log5.png' %}"></a></li>
+        <li class="fb"><a  href="https://vimeo.com/rnmotion" target="_blank" ><img class= "fb1" src= "{% static 'AppRNM/images/vimeo.png' %}" ></a></li>
+        <li class="yt"><a href="https://www.linkedin.com/company/rnmotion" target="_blank"><img src="{% static 'AppRNM/images/linked.png' %}"></a></li>
+        <li class="co"><a href="mailto:@gmail.com" target="_blank" ><img src="{% static 'AppRNM/images/gmail.png' %}"></a></li>
+       
+        </ul>
+        </ul>
+    </div>
+
+
+    {% block content %}
+	<div class="ulockd-home-slider">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="pogoSlider" id="js-main-slider">
+                    <div class="pogoSlider-slide" style="background-image:url('{% static "AppRNM/images/Banner.png" %}');">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="slide_text">
+                                        <h3>RN MOTION<br>A specialist creative studio  with </h3>
+                                        <br>
+                                        <h4><span class="theme_color">NO boundaries.</span></h4>
+                                        <br>
+                                        
+                                        <a class="contact_bt" href="{% url 'Acerca' %}">About us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                 <!-- otro banner -->
+
+                 <div class="pogoSlider-slide" style="background-image:url('{% static "AppRNM/images/bner3.png" %}');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slide_text">
+                                    <h3>Digital<br>Content</h3>
+                                    <br>
+                                    <h4><span class="theme_color">A specialist creative studio  with NO boundaries.</span></h4>
+                                    <br>
+                                    
+                                    <a class="contact_bt" href="{% url 'Acerca' %}">About us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pogoSlider-slide" style="background-image:url('{% static "AppRNM/images/bner4.png" %}');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slide_text">
+                                    <h3>PRODUCT<br>PERFORMANCE DEMOS</h3>
+                                    <br>
+                                    <h4><span class="theme_color">A specialist creative studio  with NO boundaries.</span></h4>
+                                    <br>
+                                    
+                                    <a class="contact_bt" href="{% url 'Acerca' %}">About us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pogoSlider-slide" style="background-image:url('{% static "AppRNM/images/bner5.png" %}');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slide_text">
+                                    <h3>PRODUCT CARDS<br>FOR TV ADS</h3>
+                                    <br>
+                                    <h4><span class="theme_color">A specialist creative studio  with NO boundaries.</span></h4>
+                                    <br>
+                                    
+                                    <a class="contact_bt" href="{% url 'Acerca' %}">About us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pogoSlider-slide" style="background-image:url('{% static "AppRNM/images/bnr6.png" %}');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slide_text">
+                                    <h3>3D ANIMATION</h3>
+                                    <br>
+                                    <h4><span class="theme_color">A specialist creative studio  with NO boundaries.</span></h4>
+                                    <br>
+                                    
+                                    <a class="contact_bt" href="{% url 'Acerca' %}">About us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pogoSlider-slide" style="background-image:url('{% static "AppRNM/images/bner7.png" %}');">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="slide_text">
+                                    <h3>MOTION GRAPHICS</h3>
+                                    <br>
+                                    <h4><span class="theme_color">A specialist creative studio  with NO boundaries.</span></h4>
+                                    <br>
+                                    
+                                    <a class="contact_bt" href="{% url 'Acerca' %}">About us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                    <div class="pogoSlider-slide" style="background-image:url('{% static "AppRNM/images/bner2.png" %}');">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="slide_text">
+                                        <h3>PACKAGING<br>&CONCEPT</h3>
+                                    
+										<h3>DEVELOPMENT</h3>
+										<br>
+                                        <h4><span class="theme_color"> A specialist creative studio  with NO boundaries.</span></h4>
+                                        <br>
+                                        <a class="contact_bt" href="{% url 'Acerca' %}">About us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- .pogoSlider -->
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+						   <div class="left">
+						  
+                        </div>
+						<div class="right">
+                            <h2><span class="theme_color">CLIENTS</span> </h2>
+                          </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+               <!-- texto -->
+            </div>
+
+            
+			<div class="row margin-top_30">
+                <div class="col-lg-12 margin-top_30">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/always.png' %}" alt="#" />
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/ariel.png' %}" alt="#" />
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/duracell.png' %}" alt="#" />
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/febreeze.png' %}" alt="#" />
+                                    </div>
+                                </div> 
+                            </div>
+
+
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/tide.png' %}" alt="#" />
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/Wella.png' %}" alt="#" />
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/ed.png' %}" alt="#" />
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/ms.png' %}" alt="#" />
+                                    </div>
+                                </div>  
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/coty.png' %}" alt="#" />
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/Crest.png' %}" alt="#" />
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/vicks.png' %}" alt="#" />
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                        <img class="img-responsive" src="{% static 'AppRNM/images/cap.png' %}" alt="#" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <img class="img-responsive" src="{% static 'AppRNM/images/headshoulders.png' %}" alt="#" />
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <img class="img-responsive" src="{% static 'AppRNM/images/mars.png' %}" alt="#" />
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <img class="img-responsive" src="{% static 'AppRNM/images/quaker.png' %}" alt="#" />
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                            <img class="img-responsive" src="{% static 'AppRNM/images/gille.png' %}" alt="#" />
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        
+                        
+                        </div>
+                    
+                        
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                            
+                </div>
+            
+
+               
+
+                <div class="col-lg-12">
+                    <div class="full center">
+                       <!--  <a href="{% url 'Trabajo' %}" class="hvr-radial-out button-theme">Work</a> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            
+            
+    
+    {% endblock %}
+
+
+  
+	<footer class="footer-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 margin-bottom_30">
+				  <!--  <img src="{% static 'AppRNM/images/Log.png' %}" alt="#" /> -->
+				</div>
+               <div class="col-xl-6 white_fonts">
+                    <div class="row">
+					<div class="col-md-12 white_fonts margin-bottom_30">
+					   <h3>Contact Us</h3>
+					</div>
+                        <div class="col-md-4">
+                            <div class="full icon">
+                                <img src="{% static 'AppRNM/images/localizacion.png' %}">
+                            </div>
+                            <div class="full white_fonts">
+                                <p>Calle
+                                    <br>Mexico, Cdmx</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="full icon">
+                                <img src="{% static 'AppRNM/images/gmail.png' %}">
+                            </div>
+                            <div class="full white_fonts">
+                                <p>@rnmotion.com
+                                    <br>@rnmotion.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="full icon">
+                                <img src="{% static 'AppRNM/images/llama.png' %}">
+                            </div>
+                            <div class="full white_fonts">
+                                <p>+5255
+                                    <br>+5255</p>
+                            </div>
+                        </div>
+						<div class="col-md-12">
+						   <ul class="full social_icon margin-top_20">
+                                <li><a href="#"><img src="{% static 'AppRNM/images/vimeo.png' %}"></a></li>
+                                <li><a href="#"><img src="{% static 'AppRNM//images/linked.png' %}"></a></li>
+                                <!-- <li><a href="#"><img src="{% static 'AppRNM/images/gmail.png' %}"></a></li> -->
+                               
+                            </ul>
+						</div>
+                    </div>
+                </div>
+				
+				 <div class="col-xl-6 white_fonts">
+				    <div class="row">
+					   <div class="col-md-6">
+					     <div class="footer_blog footer_menu">
+						    <h3>Menus</h3>
+						    <ul> 
+							  <li><a href="index.html">Home</a></li>
+							  <li><a href="about.html">About Us</a></li>
+							  <li><a href="services.html">Work</a></li>
+							  <li><a href="contact.html">Contact us</a></li>
+							</ul>
+						 </div>
+						 <div class="footer_blog recent_post_footer">
+						  
+						 </div>
+					   </div>
+					   <div class="col-md-6">
+					     <div class="footer_blog full">
+						     
+							 <div class="newsletter_form">
+							    <form action="index.html">
+								   
+								   
+								</form>
+							 </div>
+						 </div>
+					   </div>
+					</div>
+				 </div>
+
+            </div>
+            
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">©2022 RN Motion . All Rights Reserved.</p>
+                    <ul class="bottom_menu">
+                       <!--  <li><a href="#">Term of Service</a></li>
+                        <li><a href="#">Privacy</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+	<script src="{% static 'AppRNM/js/jquery.min.js' %}"></script>
+	<script src="{% static 'AppRNM/js/popper.min.js' %}"></script>
+    <script src="{% static 'AppRNM/js/bootstrap.min.js' %}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'AppRNM/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'AppRNM/js/jquery.pogo-slider.min.js' %}"></script>
+    <script src="{% static 'AppRNM/js/slider-index.js' %}"></script>
+    <script src="{% static 'AppRNM/js/smoothscroll.js' %}"></script>
+    <script src="{% static 'AppRNM/js/form-validator.min.js' %}"></script>
+    <script src="{% static 'AppRNM/js/contact-form-script.js' %}"></script>
+    <script src="{% static 'AppRNM/js/isotope.min.js' %}"></script>
+    <script src="{% static 'AppRNM/js/images-loded.min.js' %}"></script>
+    <script src="{% static 'AppRNM/js/custom.js' %}"></script>
+</body>
+</html>
